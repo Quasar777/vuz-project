@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <button class="header__burger-button" type="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="logo header__logo">
+            <img 
+                src="../media/icons/main-logo.svg" 
+                alt="logo" 
+                class="logo__image header__logo-image"
+                loading="lazy"
+            />
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a href="main.html" class="header__navigation-link">
+                        Обо мне
+                    </a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="first-semestr.html" class="header__navigation-link">
+                        Первый семестр
+                    </a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="!#" class="header__navigation-link">
+                        Bootstrap
+                    </a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="services.html" class="header__navigation-link">
+                        Услуги
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content"> 
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Аккордеонный элемент #1
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Аккордеонный элемент #2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Аккордеонный элемент #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../media/images/construct.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../media/images/velocity.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../media/images/veloshop.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__main container">
+            <div class="footer-column">
+                <h2 class="footer-column__title">Информация</h2>
+                <ul class="footer-column__about-list">
+                    <li class="footer-column__about-title">
+                        <a href="#!" class="footer-column__about-link">политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-column__about-title">
+                        <a href="#!" class="footer-column__about-link">Отзывы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-column__title">Контакты</h2>
+                <ul class="footer-column__contacts-list">
+                    <li class="footer-column__contacts-item">
+                        <a href="tel:79999999999" class="footer-column__contacts-link">+7-(999)-999-99-99</a>
+                    </li>
+                    <li class="footer-column__contacts-item">
+                        <a href="mailto:psina@yahoo.ru" class="footer-column__contacts-link">andryxa@yahoo.ru</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column centralized">
+                <div class="footer-column__soc1als">
+                    <ul class="footer-column__soc1als-list">
+                        <li class="footer-column__soc1als-item">
+                            <a class="footer-column__soc1als-link"  href="#!">
+                                <svg width="40" height="40" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40.4788 17.825C40.49 17.825 40.505 17.825 40.52 17.825C40.9119 17.825 41.2756 17.9469 41.5738 18.1569L41.5681 18.1531C41.7856 18.3425 41.9319 18.6087 41.9675 18.9088V18.9144C42.005 19.1431 42.0257 19.4056 42.0257 19.6737C42.0257 19.7956 42.0219 19.9156 42.0125 20.0356V20.0187C41.5906 24.4606 39.7606 35.2325 38.8306 40.205C38.4369 42.3106 37.6625 43.0156 36.9125 43.0831C35.2831 43.235 34.0457 42.0069 32.4669 40.9719C29.9956 39.35 28.5988 38.3412 26.2006 36.7606C23.4275 34.9362 25.2257 33.9294 26.8044 32.2906C27.2188 31.8594 34.4019 25.325 34.5425 24.7325C34.55 24.6969 34.5538 24.6575 34.5538 24.6162C34.5538 24.47 34.4994 24.3369 34.4113 24.2356C34.3138 24.1719 34.1919 24.1362 34.0644 24.1362C33.98 24.1362 33.8994 24.1531 33.8244 24.1812L33.8281 24.1794C33.5807 24.2356 29.6332 26.8444 21.9856 32.0056C21.1513 32.6637 20.0975 33.08 18.95 33.1287H18.9388C17.3132 32.9319 15.8375 32.57 14.4369 32.0544L14.5757 32.0994C12.8169 31.5256 11.42 31.2237 11.54 30.2525C11.6038 29.7475 12.3 29.2306 13.6288 28.7019C21.8138 25.1356 27.2719 22.785 30.0031 21.65C33.0163 20.0506 36.5094 18.7344 40.1825 17.8812L40.4769 17.8231L40.4788 17.825ZM28.8688 0.921875C13.3025 0.959375 0.696899 13.5875 0.696899 29.1594C0.696899 44.7537 13.3382 57.3969 28.9344 57.3969C44.5307 57.3969 57.1719 44.7556 57.1719 29.1594C57.1719 13.5875 44.5663 0.959375 29.0038 0.921875H29C28.9563 0.921875 28.9125 0.921875 28.8688 0.921875Z" fill="white" fill-opacity="0.9"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-column__soc1als-item">
+                            <a class="footer-column__soc1als-link"  href="#!">
+                                <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_68_624)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M47.463 42.3633C46.74 44.4099 43.866 46.103 41.574 46.5981C40.005 46.9312 37.959 47.1948 31.065 44.3379C23.322 41.1299 12.57 29.7029 12.57 22.0986C12.57 18.2275 14.802 13.7197 18.705 13.7197C20.583 13.7197 20.997 13.7563 21.615 15.2388C22.338 16.9853 24.102 21.2884 24.312 21.7295C25.179 23.539 23.43 24.5983 22.161 26.1738C21.756 26.6479 21.297 27.1607 21.81 28.043C22.32 28.9072 24.084 31.7822 26.676 34.0898C30.024 37.0727 32.739 38.0251 33.711 38.4302C34.434 38.7303 35.298 38.6604 35.826 38.0962C36.495 37.373 37.326 36.1731 38.172 34.9907C38.769 34.1445 39.528 34.0388 40.323 34.3389C40.86 34.5249 47.685 37.6945 47.973 38.2017C48.186 38.5708 48.186 40.3167 47.463 42.3633ZM30.006 0H29.991C13.452 0 0 13.4561 0 30C0 36.56 2.11502 42.646 5.71202 47.5825L1.97401 58.73L13.503 55.0459C18.246 58.1849 23.907 60 30.006 60C46.545 60 60 46.5439 60 30C60 13.4561 46.545 0 30.006 0Z" fill="white" fill-opacity="0.9"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_68_624">
+                                    <rect width="60" height="60" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-column__soc1als-item">
+                            <a class="footer-column__soc1als-link"  href="#!">
+                                <svg width="40" height="40" viewBox="0 0 60 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M58.7625 7.525C58.4292 6.2398 57.7605 5.06616 56.8249 4.12401C55.8893 3.18186 54.7204 2.50495 53.4375 2.16246C45.66 1.24517 37.8312 0.831809 30 0.924959C22.1691 0.831809 14.3402 1.24517 6.56257 2.16246C5.27977 2.50495 4.11085 3.18186 3.1753 4.12401C2.23971 5.06616 1.57105 6.2398 1.23757 7.525C0.385603 12.3023 -0.0286216 17.1474 6.58889e-05 21.9999C-0.0300466 26.8775 0.384178 31.7477 1.23757 36.5499C1.58834 37.8144 2.26469 38.9645 3.19912 39.8859C4.1335 40.8073 5.29327 41.4673 6.56257 41.7999C14.3402 42.7172 22.1691 43.1308 30 43.0374C37.8312 43.1308 45.66 42.7172 53.4375 41.7999C54.7069 41.4673 55.8668 40.8073 56.8009 39.8859C57.7354 38.9645 58.4119 37.8144 58.7625 36.5499C59.616 31.7477 60.03 26.8775 60 21.9999C60.0289 17.1474 59.6145 12.3023 58.7625 7.525ZM23.85 30.9624V13.1125L39.5625 21.9999L23.85 30.9249V30.9624Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column__logo">
+                    <div class="logo">
+                        <img 
+                            src="../media/icons/main-logo.svg" 
+                            alt="logo" 
+                            class="logo__image footer__logo"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__extra">
+            <a href="#hero">
+                <svg width="60px" height="60px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22.4199C17.5228 22.4199 22 17.9428 22 12.4199C22 6.89707 17.5228 2.41992 12 2.41992C6.47715 2.41992 2 6.89707 2 12.4199C2 17.9428 6.47715 22.4199 12 22.4199Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 13.8599L10.87 10.8C11.0125 10.6416 11.1868 10.5149 11.3815 10.4282C11.5761 10.3415 11.7869 10.2966 12 10.2966C12.2131 10.2966 12.4239 10.3415 12.6185 10.4282C12.8132 10.5149 12.9875 10.6416 13.13 10.8L16 13.8599" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>   
+            </a>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

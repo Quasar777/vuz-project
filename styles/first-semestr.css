@@ -1,0 +1,79 @@
+.header {
+    position: static;
+}
+
+.main {
+    padding-block: 50px;
+}
+
+.tables {
+    align-items: center;
+}
+
+.tables__table {
+    border: 1px solid var(--color-blue);
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+#lecture-button {
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: var(--color-blue);
+}
+
+.tables__title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.tables__title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-blue);
+}
+
+  
+thead {
+    background-color: var(--color-blue);
+    color: var(--color-light)
+
+}
+
+th {
+    padding-inline: 50px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-dark);
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-block: 25px;
+}
+
+.tables__title,
+.tables__prac-title,
+.tables__lec-title {
+    text-align: center;
+}
+
+
+.tables__prac-button {
+    width: 300px;
+}
+
+
